@@ -28,7 +28,7 @@ public class Program {
 
         try (PrintWriter pw = new PrintWriter(file)) {
             for(int i = 0; i < size; i++){
-                System.out.print("Enter line text: "); // Просим ввести текст на строку.
+                System.out.print("Enter line text " + i + " : "); // Просим ввести текст на строку.
                 text = in.nextLine(); // Записываем текст в переменную.
                 pw.println(text); // Записываем переменную в текствый файл.
             }
