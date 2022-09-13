@@ -16,13 +16,13 @@ public class ToArrays {
         return twoDimArray; // Возвращае готовый массив.
     }
 
-    public static void showArray(int[][] twoDimArray, File file){ // Данный метод запишет готовый массив в
+    public static void showArray(int[][] twoDimArray, File file){ // Данный метод запишет готовый массив в файл.
         try(PrintWriter pw = new PrintWriter(file)) {
-            for (int i = 0; i < twoDimArray.length; i++) {  //идём по строкам
-                for (int j = 0; j < twoDimArray.length; j++) {//идём по столбцам
-                    pw.print(" " + twoDimArray[i][j] + " "); //вывод элемента
+            for (int i = 0; i < twoDimArray.length; i++) {  //идём по строкам.
+                for (int j = 0; j < twoDimArray.length; j++) {//идём по столбцам.
+                    pw.print(" " + twoDimArray[i][j] + " "); //вывод элемента.
                 }
-               pw.println();//перенос строки ради визуального сохранения табличной формы
+               pw.println();//перенос строки ради визуального сохранения табличной формы.
             }
         } catch (IOException e) {
             e.printStackTrace();
